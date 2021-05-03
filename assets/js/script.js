@@ -1,4 +1,5 @@
-  
+  /*test 1*/
+
 // function agrandir() {
 //     var herbe = document.getElementById("herbe");
 //     var width = herbe.clientWidth;
@@ -52,5 +53,12 @@
 document.getElementById('touch').onclick = function imgGrow() {
     var myImg = document.getElementById('touch');
     var width = myImg.clientWidth;
-    myImg.style.width = (width + 20) + "px";
+    myImg.style.width = (width + 100) + "px";
+
+    if( width >= 1000 ){
+    myImg.style.width = 600 + 'px';
+    }
+    else if ( width < 1000 ){
+      myImg.style.width = ( width + 100) + 'px';
+    }
 }
